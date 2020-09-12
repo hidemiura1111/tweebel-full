@@ -21,6 +21,7 @@
 </head>
 <body>
     <div id="app">
+        {{-- header --}}
        <section class="px-8 py-4">
            <header class="container mx-auto">
                <h1>
@@ -33,11 +34,9 @@
            </header>
        </section>
 
-       <section class="px-8">
-           <main class="container mx-auto">
-               @yield('content')
-           </main>
-       </section>
+       {{ $slot }}
     </div>
+
+    <script> src="http://unpkg.com/turbolinks"</script>
 </body>
 </html>
